@@ -1,1 +1,60 @@
 frontend/index.html
+Biz
+TradingHub
+a live read on BTC 15-min windows — not financial advice
+Log out
+Status
+connecting…
+Model's current pick
+NO CALL YET
+Round closes in
+—:—
+Phase
+—
+Signal
+—
+Settle UP
+—
+Settle DOWN
+—
+Regime
+—
+Session
+Regular hours
+Kalshi strike
+—
+Model's window ref
+—
+Support
+—
+Resistance
+—
+Minutes left
+—
+Tradeable dir
+—
+Too close to call
+—
+Reversal chance
+—
+Raw indicators
+Tier text
+Why it thinks this
+Waiting for the model to warm up…
+Pattern scanner
+multi-candle structures, checked every 30s
+Last closed candle
+watching…
+Scanning…
+Track record
+Candles 101
+Chart lines
+Patterns (50)
+Signal tiers
+Indicators
+Regimes
+Kalshi basics
+Round-by-round track record
+Every 15-min round, in order: the model's first call, the strike it needed to clear, where price actually settled, and whether that first call won.
+Waiting for the first round to complete…
+Educational tool. Model output is a probability estimate, not a guarantee — Kalshi contracts can settle either way. Nothing here is financial advice.
