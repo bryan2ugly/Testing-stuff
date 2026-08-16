@@ -740,7 +740,19 @@ try {
     layout: { background: { color: 'transparent' }, textColor: '#8a9690' },
     grid: { vertLines: { color: '#1a201c' }, horzLines: { color: '#1a201c' } },
     rightPriceScale: { borderColor: '#232b26' },
-    timeScale: { borderColor: '#232b26', timeVisible: true },
+    timeScale: {
+      borderColor: '#232b26', timeVisible: true,
+      tickMarkFormatter: (time) => new Date(time * 1000).toLocaleTimeString('en-US', {
+        hour: '2-digit', minute: '2-digit', timeZone: 'America/New_York',
+      }),
+    },
+    localization: {
+      // force Eastern Time on the chart's own axis labels/crosshair,
+      // regardless of the viewer's system timezone setting
+      timeFormatter: (time) => new Date(time * 1000).toLocaleTimeString('en-US', {
+        hour: '2-digit', minute: '2-digit', timeZone: 'America/New_York',
+      }),
+    },
   });
   series = chart.addCandlestickSeries({
     upColor: '#3fb87f', downColor: '#d9614f', borderVisible: false,
@@ -891,7 +903,8 @@ async function pollState(){
     const pickValEl = document.getElementById('pickValue');
     if (conflict){
       badgeEl.className = 'pick-badge warn';
-      pickValEl.innerHTML = `LOCKED ${pickDir} — ${pickTier}<br><span class="pick-sub">⚠ model now leans ${rawLean} ${rawPct.toFixed(1)}% — watch reversal chance below</span>`;
+      const leanColor = rawLean === 'UP' ? 'var(--up)' : 'var(--down)';
+      pickValEl.innerHTML = `<span style="color:${leanColor};">Now leans ${rawLean} ${rawPct.toFixed(1)}%</span><br><span class="pick-sub">⚠ round locked ${pickDir} (${pickTier}) — that's what gets graded, see reversal chance below</span>`;
     } else if (pickDir){
       const pct = pickDir === 'UP' ? s.settle_up_pct : s.settle_down_pct;
       badgeEl.className = 'pick-badge ' + (pickDir === 'UP' ? 'up' : 'down');
@@ -972,7 +985,7 @@ async function pollRounds(){
     if (!rows.length){ el.innerHTML = '<div class="feed-empty">Waiting for the first round to complete…</div>'; return; }
     el.innerHTML = rows.map(r => {
       const isLive = r.close_time === null;
-      const time = isLive ? 'live' : new Date(r.close_time).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+      const time = isLive ? 'live' : new Date(r.close_time).toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit', timeZone:'America/New_York'});
       const call = r.first_signal_dir ? `${r.first_signal_tier}: ${r.first_signal_dir}` : 'no call yet';
       let resultHtml;
       if (isLive) {
