@@ -1,0 +1,13 @@
+[
+  {
+    "close_time": "2026-08-16T22:42:00+00:00",
+    "strike": 62779.58,
+    "settle_price": 62780.01,
+    "actual_dir": "UP",
+    "first_signal_tier": "NONE",
+    "first_signal_dir": "NONE",
+    "first_signal_correct": null,
+    "confirmed_dir": "HOLD",
+    "confirmed_correct": null
+  }
+]
