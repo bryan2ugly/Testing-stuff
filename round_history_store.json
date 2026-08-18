@@ -1945,5 +1945,16 @@
     "first_signal_correct": true,
     "confirmed_dir": "UP",
     "confirmed_correct": true
+  },
+  {
+    "close_time": "2026-08-18T07:00:00.547286+00:00",
+    "strike": 64374.81829999999,
+    "settle_price": 64262.132,
+    "actual_dir": "DOWN",
+    "first_signal_tier": "Early Confirm",
+    "first_signal_dir": "UP",
+    "first_signal_correct": false,
+    "confirmed_dir": "HOLD",
+    "confirmed_correct": null
   }
 ]
