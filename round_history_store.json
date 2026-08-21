@@ -1,16 +1,5 @@
 [
   {
-    "close_time": "2026-08-18T18:42:00+00:00",
-    "strike": 64749.53,
-    "settle_price": 64759.72,
-    "actual_dir": "UP",
-    "first_signal_tier": "NONE",
-    "first_signal_dir": "NONE",
-    "first_signal_correct": null,
-    "confirmed_dir": "HOLD",
-    "confirmed_correct": null
-  },
-  {
     "close_time": "2026-08-18T18:45:00+00:00",
     "strike": 64759.72,
     "settle_price": 64725.14,
@@ -21998,5 +21987,16 @@
     "first_signal_correct": true,
     "confirmed_dir": "DOWN",
     "confirmed_correct": true
+  },
+  {
+    "close_time": "2026-08-21T15:36:00+00:00",
+    "strike": 77578.97,
+    "settle_price": 77599.45,
+    "actual_dir": "UP",
+    "first_signal_tier": "NONE",
+    "first_signal_dir": "NONE",
+    "first_signal_correct": null,
+    "confirmed_dir": "HOLD",
+    "confirmed_correct": null
   }
 ]
