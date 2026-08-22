@@ -1,16 +1,5 @@
 [
   {
-    "close_time": "2026-08-19T06:15:00+00:00",
-    "strike": 64186.34,
-    "settle_price": 64125.41,
-    "actual_dir": "DOWN",
-    "first_signal_tier": "Confirmed",
-    "first_signal_dir": "DOWN",
-    "first_signal_correct": true,
-    "confirmed_dir": "DOWN",
-    "confirmed_correct": true
-  },
-  {
     "close_time": "2026-08-19T05:30:00+00:00",
     "strike": 64346.98,
     "settle_price": 64304.55,
@@ -21997,6 +21986,17 @@
     "first_signal_dir": "DOWN",
     "first_signal_correct": true,
     "confirmed_dir": "DOWN",
+    "confirmed_correct": true
+  },
+  {
+    "close_time": "2026-08-22T19:45:00+00:00",
+    "strike": 77284.55,
+    "settle_price": 77427.97,
+    "actual_dir": "UP",
+    "first_signal_tier": "Early Confirm",
+    "first_signal_dir": "UP",
+    "first_signal_correct": true,
+    "confirmed_dir": "UP",
     "confirmed_correct": true
   }
 ]
