@@ -1,16 +1,5 @@
 [
   {
-    "close_time": "2026-08-20T04:45:00+00:00",
-    "strike": 69308.4,
-    "settle_price": 69294.4,
-    "actual_dir": "DOWN",
-    "first_signal_tier": "Early Confirm",
-    "first_signal_dir": "DOWN",
-    "first_signal_correct": true,
-    "confirmed_dir": "DOWN",
-    "confirmed_correct": true
-  },
-  {
     "close_time": "2026-08-20T03:45:00+00:00",
     "strike": 68915.25,
     "settle_price": 69136.55,
@@ -21948,5 +21937,14 @@
     "final_dir": "DOWN",
     "final_tier": "Early Winner Forecast",
     "correct": true
+  },
+  {
+    "close_time": "2026-08-23T20:15:00.877487+00:00",
+    "strike": 77328.72870786516,
+    "settle_price": 77265.3912121212,
+    "actual_dir": "DOWN",
+    "final_dir": "UP",
+    "final_tier": "Takeover Flip",
+    "correct": false
   }
 ]
