@@ -1,16 +1,5 @@
 [
   {
-    "close_time": "2026-08-20T11:15:00+00:00",
-    "strike": 71943.6,
-    "settle_price": 71938.55,
-    "actual_dir": "DOWN",
-    "first_signal_tier": "Confirmed",
-    "first_signal_dir": "UP",
-    "first_signal_correct": false,
-    "confirmed_dir": "UP",
-    "confirmed_correct": false
-  },
-  {
     "close_time": "2026-08-20T11:30:00+00:00",
     "strike": 71938.55,
     "settle_price": 71841.13,
@@ -21624,5 +21613,14 @@
     "final_dir": "DOWN",
     "final_tier": "Momentum Engine",
     "correct": false
+  },
+  {
+    "close_time": "2026-08-24T01:15:00+00:00",
+    "strike": 77675.88,
+    "settle_price": 77423.77,
+    "actual_dir": "DOWN",
+    "final_dir": "DOWN",
+    "final_tier": "Early Winner Forecast",
+    "correct": true
   }
 ]
