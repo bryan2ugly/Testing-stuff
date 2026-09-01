@@ -1,16 +1,5 @@
 [
   {
-    "close_time": "2026-08-20T20:00:00+00:00",
-    "strike": 72712.36,
-    "settle_price": 72672.84,
-    "actual_dir": "DOWN",
-    "first_signal_tier": "Early Confirm",
-    "first_signal_dir": "DOWN",
-    "first_signal_correct": true,
-    "confirmed_dir": "DOWN",
-    "confirmed_correct": true
-  },
-  {
     "close_time": "2026-08-20T20:15:00+00:00",
     "strike": 72672.84,
     "settle_price": 72686.75,
@@ -21339,6 +21328,15 @@
     "actual_dir": "DOWN",
     "final_dir": "UP",
     "final_tier": "Early Held-Cross Rescue",
+    "correct": false
+  },
+  {
+    "close_time": "2026-09-01T01:15:00+00:00",
+    "strike": 78628.02,
+    "settle_price": 78526.55,
+    "actual_dir": "DOWN",
+    "final_dir": "UP",
+    "final_tier": "Early Winner Forecast",
     "correct": false
   }
 ]
